@@ -1,0 +1,29 @@
+#File that contains common Windows Firewall Openings 
+firewall_hh_windows_rules:
+  '500 - Allow outbound to 160.92.0.136 on 1858 and 443':
+    direction: 'outbound'
+    protocol: 'tcp'
+    port: '1858,443'
+    hosts: '160.92.0.136'
+    description: 'Outbound to endpoint 136 for CyberArk PSM'
+
+  '501 - Allow outbound to 160.92.0.139 on 1858 and 443':
+    direction: 'outbound'
+    protocol: 'tcp'
+    port: '1858,443'
+    hosts: '160.92.0.139'
+    description: 'Outbound to endpoint 139 for CyberArk PSM'
+
+  '502 - Allow outbound to 160.92.0.196 on 443':
+    direction: 'outbound'
+    protocol: 'tcp'
+    port: '443'
+    hosts: '160.92.0.196'
+    description: 'Outbound to endpoint 196 for CyberArk PSM'
+
+  '503 - Allow outbound to 160.92.0.210 on 443':
+    direction: 'outbound'
+    protocol: 'tcp'
+    port: '443'
+    hosts: '160.92.0.210'
+    description: 'Outbound to endpoint 210 for CyberArk PSM'
